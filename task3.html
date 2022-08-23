@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasl 3</title>
+</head>
+<body>
+    <p class="text1" id="text1">I am some random text!</p>
+    <p class="text2" id="text2">I am another random text!</p>
+
+    <button type="button" class="btn" id="btn1">change color</button>
+
+    <style>
+        .text{
+            border: 1px solid black;
+            height: fit-content;
+            width: fit-content;
+        }
+    </style>
+
+    <script>
+        const paragraph = document.getElementById('text1');
+        const btn = document.getElementById('btn1');
+
+        btn.addEventListener('click', changeBackground);
+
+        function changeBackground() {
+            text1.style.backgroundColor = "red";
+            text2.style.backgroundColor = "green";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+<body>
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+
+    <script>
+        function removecolor() {
+            let selector = document.getElementById('colorSelect');
+            selector.remove(selector.selectedIndex);
+        }
+        // function removecolor() {
+        //     const selector = document.getElementById('colorSelect');
+    
+        //     if (selector.value === 'Red') {
+        //         selector.remove(0);
+        //     }
+        //     if (selector.value === 'Green') {
+        //         selector.remove(1);
+        //     }
+        //     if (selector.value === 'White') {
+        //         selector.remove(2);
+        //     }
+        //     if (selector.value === 'Black') {
+        //         selector.remove(3);
+        //     }
+                
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        span{
+            width: 10vw;
+            height: 10vw;
+            margin-left: 30vw;
+            border: 2px solid black;
+        }
+    </style>
+    <title>Task_1</title>
+</head>
+<body>
+    <p id="text">JavaScript Exercises - w3resource</p>
+    <span id="square" onclick="squareStyle()">thing</span>
+    <div>
+        <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+
+    <script>
+        function js_style() 
+            {
+            //font styles added by JS:
+            text.style.fontSize = "14pt";
+            text.style.fontFamily = "Comic Sans MS";
+            text.style.color = "green";
+            }
+        
+            function squareStyle() {
+                square.style.fontSize = "15px";
+                square.style.color = "red";
+                square.style.fontFamily = "Comic Sans MS";
+            }
+    </script>
+</body>
+</html>

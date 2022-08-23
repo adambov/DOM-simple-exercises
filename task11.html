@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+    <style>
+        *{
+            margin: 5vh;
+            padding: 3px;
+            box-sizing: border-box;
+        }
+        
+        button{
+            height: 7vh;
+            width: 7vw;
+            background-color: yellow;
+        }
+        .container{
+            border: 2px solid black;
+            width: 40vw;
+            height: 35vh;
+        }
+    </style>
+</head>
+<body>
+    <button type="submit" class="submit" id="submit">Show image</button>
+    <div id="container" class="container"></div>
+        <!-- <img src="./images/taj.jpg" class="taj" id="taj">
+        <img src="./images/sunset.jpg" class="sunset" id="sunset">
+        <img src="./images/crops.jpg" class="crops" id="crops"> -->
+    
+    <script>
+        const imgDiv = document.querySelector('.container');
+
+        let backgroundImgs = [url('./images/taj.jpg'), url('./images/sunset.jpg'), url('./images/crops.jpg')];
+        var i = 0;
+        document.querySelector('.submit').addEventListener('click', showImage);
+        function showImage() {
+            i = i < backgroundImgs.length ? ++i : 0;
+            document.querySelector('.container').style.background = backgroundImgs[i];
+            // container.style.background = "url('./images/taj.jpg') no-repeat center";
+            // container.style.background = "url('./images/sunset.jpg') no-repeat center";
+            // container.style.background = "url('./images/crops.jpg') no-repeat center ";
+            
+        }
+    </script>
+</body>
+</html>

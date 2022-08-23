@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <form>
+        <label>Enter you names:</label> <br>
+        First name: <input type="text" id="fname"><br>
+        Last name: <input type="text" id="lname" ><br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <p id="output" class="output"></p>
+
+
+    <script>
+    
+    const subBtn = document.getElementById('submit');
+    subBtn.addEventListener('click', getFormvalue);
+
+        function getFormvalue(event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('fname').value;
+            const lastName = document.getElementById('lname').value;
+            const output = document.getElementById('output');
+
+            output.innerHTML += `Welcome, ${firstName}  ${lastName}!`;
+
+            console.log(firstName, lastName)
+
+        }
+    </script>
+</body>
+</html>
